@@ -1,0 +1,108 @@
+html {
+	height: 100%;
+	body {
+		height: 100%;
+		min-height:100%; 
+	}
+}
+//hero-banner
+.full-height {
+	height:calc(100% - 50px);
+	min-height:calc(100% - 50px);
+	position: relative;
+	margin-top: -22px; 
+}
+.full-width {
+	width: 100%;
+}
+.hero-background {
+	@include image-background ('detroit.jpg');
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.white-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255, 0.50);
+	text-align: center;
+}
+.logo-container {
+	position: absolute;
+	height:500px;
+	width: 500px;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	.nu-colorz-logo {
+		height: 500px;
+	}
+
+}
+.artist-row {
+	height: 500px;
+	background-color: white;
+	padding-top: 10px;
+	h1 {
+		font-weight: 100;
+	}
+	.artist-bio {
+		h1 {
+			font-size: 24px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+		h2 {
+			font-size: 20px;
+			font-style: italic;
+			font-weight: 100;
+			margin-top: -10px;
+		}
+	}
+	.tiles {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.white-text {
+		color:white;
+	}
+	.paul-tile {
+		background-color: $purple;
+		height: 300px;
+	}
+	.wal10-tile {
+		background-color: $blue;
+		height: 300px;
+	}
+	.mizal-tile {
+		background-color: $red;
+		height: 300px;
+	}
+	.polar-tile {
+		background-color: $orange;
+		height: 300px;
+	}
+	.picture-tile {
+		height: 200px;
+		.artist-pic {
+			top:0;
+			left:0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+		}
+		.paul-pic {
+			@include image-background-unfixed('paul-soundset.jpeg');
+		}
+		.wal10-pic {
+			@include image-background-unfixed('paul-soundset.jpeg');
+		}
+	}
+}
